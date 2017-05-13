@@ -1,0 +1,23 @@
+{
+  "name": "h5observer",
+  "description": "event observer function",
+  "keywords": [
+    "event",
+    "observer"
+  ],
+  "version": "0.0.24",
+  "author": {
+    "name": "zswang",
+    "url": "http://weibo.com/zswang"
+  },
+  "ignore": [
+    "tests",
+    "src",
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ]
+}

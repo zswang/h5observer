@@ -1,0 +1,54 @@
+{
+  "name": "h5observer",
+  "version": "0.0.24",
+  "description": "event observer function",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zswang/h5observer.git"
+  },
+  "scripts": {
+    "_update_version": "node version.js",
+    "dist": "npm run _update_version && gulp dist example && npm run test",
+    "mocha": "mocha",
+    "test": "istanbul cover --hook-run-in-context node_modules/mocha/bin/_mocha -- -R spec",
+    "lint": "jshint h5observer.js"
+  },
+  "keywords": [
+    "event",
+    "observer"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/zswang/h5observer/issues"
+  },
+  "homepage": "https://github.com/zswang/h5observer",
+  "author": {
+    "name": "zswang",
+    "url": "http://weibo.com/zswang"
+  },
+  "main": "h5observer.js",
+  "dependencies": {
+    "colors": "^1.0.3",
+    "mkdirp": "^0.5.0",
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-examplejs": "0.0.9",
+    "gulp-jdists": "^2.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-typescript": "^3.1.6",
+    "gulp-uglify": "^2.1.2",
+    "typescript": "^2.0.3",
+    "istanbul": "^0.4.5",
+    "jshint": "^2.9.4",
+    "mocha": "^3.2.0",
+    "should": "^11.2.1"
+  },
+  "files": [
+    "README.md",
+    "h5observer.js",
+    "h5observer.min.js",
+    "src/ts/observer.ts"
+  ]
+}
