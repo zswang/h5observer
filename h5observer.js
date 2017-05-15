@@ -5,8 +5,8 @@
    * event observer function
    * @author
    *   zswang (http://weibo.com/zswang)
-   * @version 0.0.24
-   * @date 2017-05-13
+   * @version 0.0.26
+   * @date 2017-05-15
   * @license MIT
   */
   /*<function name="objectObserver">*/
@@ -217,6 +217,9 @@ function arrayObserver(model, trigger) {
   ```
  */
 function observer(model, trigger, filter) {
+    if (!trigger) {
+        return;
+    }
     if (Array.isArray(model)) {
         arrayObserver(model, trigger);
     }

@@ -56,7 +56,7 @@ describe("src/ts/observer.ts", function () {
     examplejs_printLines = [];
   var data = { a: 1 };
   h5observer.observer(data);
-  h5observer.observer(null);
+  h5observer.observer(null, function () {});
   });
           
   it("observer():trigger", function () {

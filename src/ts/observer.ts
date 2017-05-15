@@ -159,7 +159,7 @@ function arrayObserver(model: any[], trigger: ArrayObserverTriggerFunction) {
   ```js
   var data = { a: 1 };
   h5observer.observer(data);
-  h5observer.observer(null);
+  h5observer.observer(null, function () {});
   ```
  * @example observer():trigger
   ```js
